@@ -39,6 +39,7 @@ body {
 .conteudo {
     border-top: 0.4px solid #FFF2E7;
     margin-bottom: 48px;
+    padding: 0 25px;
 }
 
 .conteudo-principal {
@@ -86,7 +87,7 @@ body {
     background-color: rgba( 236, 214, 196, 0.53);
 }
 .conteudo-principal-imagem {
-    height: 430px;
+    height: 410px;
 }
 
 .conteudo-secundario {
@@ -126,4 +127,93 @@ body {
     height: 48px;
     display:block;
     margin: 0 auto;
+}
+
+
+@media (max-width:768px) {
+
+
+    .cabecalho .cabecalho-menu {
+        display:none;
+    }
+
+    .conteudo {
+        padding: 10px 30px;
+    }
+
+    .conteudo .conteudo-principal {
+        margin-top: 40px;
+    }
+
+    .conteudo .conteudo-secundario  .conteudo-secundario-titulo{
+        margin-top: 40px;
+    }
+
+    .conteudo .conteudo-principal-escrito .conteudo-principal-escrito-titulo {
+        font-size: 44px;
+    }
+
+    .conteudo .conteudo-principal-escrito .conteudo-principal-escrito-subtitulo {
+       font-size: 21px;
+    }
+
+    .conteudo .conteudo-principal-escrito .conteudo-principal-escrito-botao {
+        width: 160px;
+        height: 55px;
+        display: inline-block;
+        font-size: 20px;
+        
+    }
+
+    .conteudo-secundario {
+        max-width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 40px;
+    }
+
+    .conteudo .conteudo-principal .conteudo-principal-imagem {
+        height: 360px;
+    }
+
+
+    .conteudo .conteudo-secundario .conteudo-secundario-titulo {
+        font-size: 22px;
+    }
+
+    .conteudo .conteudo-secundario .conteudo-secundario-paragrafo {
+        font-size: 16px;
+        
+    }
+
+
+    .rodape .rodape-imagem {
+        height: 38px;
+    }
+
+
+}
+
+
+
+@media (max-width:590px) {
+
+   .conteudo .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .conteudo .conteudo-principal .conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+   }
+
+   .conteudo .conteudo-principal .conteudo-principal-escrito-titulo {
+    margin-top: 30px;
+   }
+
 }
